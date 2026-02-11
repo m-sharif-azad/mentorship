@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Research Collaboration Application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="apply.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="darkToggle">🌙 Dark Mode</button>
+  </div>
+
+  <main class="form-container fade-in">
+
+    <form
+      action="https://formsubmit.co/smsu.azad@gmail.com"
+      method="POST"
+      class="application-form"
+      id="researchForm"
+    >
+
+      <!-- FormSubmit configuration -->
+      <input type="hidden" name="_subject" value="New Research Collaboration Application">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://YOUR_USERNAME.github.io/YOUR_REPO/thankyou.html">
+
+      <h2>Student Research Participation Application</h2>
+      <p class="subtitle">
+        Merit-based academic research collaboration under supervision.
+      </p>
+
+      <fieldset>
+        <legend>Personal & Academic Information</legend>
+
+        <label>Full Name</label>
+        <input type="text" name="Full Name" required>
+
+        <label>University / Institution</label>
+        <input type="text" name="University" required>
+
+        <label>Degree Program</label>
+        <select name="Degree Program" required>
+          <option value="">Select</option>
+          <option>BSc</option>
+          <option>MSc</option>
+          <option>MPhil</option>
+          <option>PhD</option>
+        </select>
+
+        <label>Official University Email</label>
+        <input type="email" name="Email" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Research Background</legend>
+
+        <label>Research Interests</label>
+        <input type="text" name="Research Interests">
+
+        <label>Technical Skills</label>
+        <input type="text" name="Technical Skills">
+
+        <label>Previous Research Experience</label>
+        <textarea name="Experience"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contribution Commitment</legend>
+
+        <label>Weekly Time Commitment</label>
+        <select name="Weekly Hours" required>
+          <option value="">Select</option>
+          <option>5–10 hours</option>
+          <option>10–15 hours</option>
+          <option>15+ hours</option>
+        </select>
+
+        <label>How will you contribute?</label>
+        <textarea name="Contribution" required></textarea>
+
+        <label>Motivation</label>
+        <textarea name="Motivation" required></textarea>
+      </fieldset>
+
+      <fieldset class="ethics">
+        <legend>Authorship & Ethics Agreement</legend>
+
+        <label>
+          <input type="checkbox" required>
+          I understand authorship is not guaranteed and depends on contribution.
+        </label>
+
+        <label>
+          <input type="checkbox" required>
+          I agree to follow international publication ethics (COPE / ICMJE).
+        </label>
+
+        <label>
+          <input type="checkbox" required>
+          I understand no payment guarantees authorship.
+        </label>
+      </fieldset>
+
+      <button type="submit" class="submit-btn">
+        Submit Application
+      </button>
+
+    </form>
+
+  </main>
+
+  <script src="apply.js"></script>
+</body>
+</html>

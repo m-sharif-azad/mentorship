@@ -1,0 +1,156 @@
+/* Root variables */
+:root {
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --text: #222;
+  --accent: #2563eb;
+  --border: #d1d5db;
+}
+
+/* Dark mode */
+body.dark {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #e5e7eb;
+  --border: #334155;
+}
+
+/* Global */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  margin: 0;
+  transition: background 0.4s, color 0.4s;
+}
+
+/* Container */
+.form-container {
+  max-width: 850px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+/* Form card */
+.application-form {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 35px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  animation: slideUp 0.8s ease;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  text-align: center;
+  opacity: 0.75;
+  margin-bottom: 30px;
+}
+
+/* Fieldsets */
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  transition: transform 0.3s;
+}
+
+fieldset:hover {
+  transform: scale(1.01);
+}
+
+legend {
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+/* Inputs */
+label {
+  display: block;
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+input, select, textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.25);
+  outline: none;
+}
+
+/* Ethics */
+.ethics label {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37,99,235,0.4);
+}
+
+/* Dark toggle */
+.theme-toggle {
+  text-align: right;
+  padding: 15px 30px;
+}
+
+.theme-toggle button {
+  background: none;
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+/* Message */
+#formMessage {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
