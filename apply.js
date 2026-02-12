@@ -1,4 +1,6 @@
+// Dark mode toggle (apply.html only)
 const toggleBtn = document.getElementById("darkToggle");
+
 toggleBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
   toggleBtn.textContent =
@@ -7,16 +9,11 @@ toggleBtn.addEventListener("click", () => {
       : "🌙 Dark Mode";
 });
 
+// Form handling (no email restriction)
 const form = document.getElementById("researchForm");
 
-form.addEventListener("submit", function (e) {
-  const email = form.querySelector('input[name="Email"]').value;
-
-  if (!email.includes(".edu") && !email.includes("ac.")) {
-    e.preventDefault();
-    alert("Please use an official university email address.");
-    return;
-  }
-
-  // If validation passes → form submits to FormSubmit
+form.addEventListener("submit", function () {
+  // No custom validation
+  // Browser HTML5 validation will run automatically
+  // If valid → form submits to FormSubmit
 });
