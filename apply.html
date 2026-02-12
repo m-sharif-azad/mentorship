@@ -9,6 +9,180 @@
 </head>
 
 <body>
+
+  <div class="theme-toggle">
+    <button id="darkToggle">🌙 Dark Mode</button>
+  </div>
+
+  <main class="form-container fade-in">
+
+    <form
+      action="https://formsubmit.co/smsu.azad@gmail.com"
+      method="POST"
+      class="application-form"
+      id="researchForm"
+    >
+
+      <!-- ===============================
+           FormSubmit Configuration
+      ================================ -->
+      <input type="hidden" name="_subject"
+        value="Research Application | %Full Name% | %University%">
+
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="hidden" name="_next"
+        value="https://m-sharif-azad.github.io/mentorship/thankyou.html">
+
+      <!-- ===============================
+           Header
+      ================================ -->
+      <h2>Student Research Participation Application</h2>
+      <p class="subtitle">
+        Merit-based academic research collaboration under supervision.
+      </p>
+
+      <!-- ===============================
+           Personal & Academic Info
+      ================================ -->
+      <fieldset>
+        <legend>Personal & Academic Information</legend>
+
+        <label>Full Name</label>
+        <input type="text" name="Full Name" required>
+
+        <label>University / Institution</label>
+        <input type="text" name="University" required>
+
+        <label>Degree Program</label>
+        <select name="Degree Program" required>
+          <option value="">Select</option>
+          <option>BSc</option>
+          <option>MSc</option>
+          <option>MPhil</option>
+          <option>PhD</option>
+        </select>
+
+        <label>Email Address</label>
+        <input type="email" name="Email" required>
+
+        <label>Phone Number (optional)</label>
+        <input
+          type="tel"
+          name="Phone Number"
+          placeholder="+880 1XXXXXXXXX"
+          pattern="[+0-9\s\-]{7,20}">
+      </fieldset>
+
+      <!-- ===============================
+           Research Background
+      ================================ -->
+      <fieldset>
+        <legend>Research Background</legend>
+
+        <label>Research Interests</label>
+        <input type="text" name="Research Interests"
+               placeholder="AI, Deep Learning, Computer Vision">
+
+        <label>Technical Skills</label>
+        <input type="text" name="Technical Skills"
+               placeholder="Python, PyTorch, LaTeX">
+
+        <label>Previous Research Experience (optional)</label>
+        <textarea name="Experience"></textarea>
+      </fieldset>
+
+      <!-- ===============================
+           Contribution Commitment
+      ================================ -->
+      <fieldset>
+        <legend>Contribution Commitment</legend>
+
+        <label>Weekly Time Commitment</label>
+        <select name="Weekly Hours" required>
+          <option value="">Select</option>
+          <option>5–10 hours</option>
+          <option>10–15 hours</option>
+          <option>15+ hours</option>
+        </select>
+
+        <label>How can you contribute to this research?</label>
+        <textarea name="Contribution" required></textarea>
+
+        <label>Motivation for participation</label>
+        <textarea name="Motivation" required></textarea>
+      </fieldset>
+
+      <!-- ===============================
+           Student–Mentor Agreement
+      ================================ -->
+      <fieldset class="ethics">
+        <legend>Student–Mentor Agreement & Ethics</legend>
+
+        <p style="font-size: 14px; opacity: 0.85;">
+          Before submitting, please read the
+          <a href="student-mentor-agreement.pdf"
+             target="_blank"
+             style="color:#2563eb; font-weight:600;">
+            Student–Mentor Agreement (PDF)
+          </a>.
+        </p>
+
+        <label>
+          <input type="checkbox" required>
+          I have read and understood the Student–Mentor Agreement.
+        </label>
+
+        <label>
+          <input type="checkbox" required>
+          I understand that authorship is not guaranteed and is based on
+          substantial intellectual contribution.
+        </label>
+
+        <label>
+          <input type="checkbox" required>
+          I agree to follow international publication ethics
+          (COPE / ICMJE).
+        </label>
+      </fieldset>
+
+      <!-- ===============================
+           Submit
+      ================================ -->
+      <button type="submit" class="submit-btn">
+        Submit Application
+      </button>
+
+    </form>
+
+  </main>
+
+  <script src="apply.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Research Collaboration Application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="apply.css">
+</head>
+
+<body>
   <div class="theme-toggle">
     <button id="darkToggle">🌙 Dark Mode</button>
   </div>
@@ -116,4 +290,4 @@
 
   <script src="apply.js"></script>
 </body>
-</html>
+</html> -->
